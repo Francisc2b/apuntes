@@ -1,0 +1,19 @@
+tipos de varialbes local de metodo
+
+comparar con equals objetos siempre
+polimorfismo
+sobreescribir
+sobregarca
+
+protected
+
+abstract
+clase base sin instanciar esa clase
+sus metodos estan disponibles en las qe heredan sin obligarme a crearlos
+
+interface
+
+excepciones
+
+
+
