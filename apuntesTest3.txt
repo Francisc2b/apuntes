@@ -1,0 +1,6 @@
+Las colecciones de tipo set no permiten duplicados
+se debe declarar de que tipo son con <  String p.e>
+
+implementar Comparable su metodo y lo puedo reescribir
+
+Comparator compara string puedo reescribir la forma de comparar
