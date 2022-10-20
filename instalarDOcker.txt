@@ -1,0 +1,8 @@
+Ejecutar terminal como administrador
+
+Ejecutar lo siguiente y dar al Enter y esperar, y a seguir los pasos:
+1 - dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+2 - dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+3 - Instalar "Paquete de actualización del kernel de Linux en WSL 2 para máquinas x64", archivo "wsl_update_x64"
+4 - wsl --set-default-version 2
+5 - Pulsar a que reinicie
