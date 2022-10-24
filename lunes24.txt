@@ -75,3 +75,12 @@ De Conrado Ayuso para todos 12:35 PM
 		reinstalar maven
 		
 		https://download.eclipse.org/technology/m2e/releases/2.0.4/
+		
+		
+		
+		CREATE TABLE HR.PRODUCTOS 
+						   (	ID_PRODUCTO NUMBER NOT NULL ENABLE PRIMARY KEY,
+							DESCRIPCION VARCHAR2(50 BYTE) NOT NULL ENABLE,
+							PRECIO NUMBER DEFAULT 0 NOT NULL ENABLE, 
+							STOCK NUMBER DEFAULT 0 NOT NULL ENABLE) ;
+
