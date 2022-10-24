@@ -1,0 +1,72 @@
+String 
+De Begoña Olea para todos 10:06 AM
+create or replace PROCEDURE    Ver_NombrePais 
+(PARAM_COD_PAIS IN varchar, PARAM_NOMBRE_PAIS OUT VARCHAR ) AS
+BEGIN    
+      SELECT COUNTRY_NAME  INTO PARAM_NOMBRE_PAIS
+      FROM HR.COUNTRIES    
+      WHERE COUNTRY_ID = PARAM_COD_PAIS; 
+END;
+De Begoña Olea para todos 10:51 AM
+volvemos en 20 minutos
+11:10
+De Begoña Olea para todos 11:34 AM
+String crearTablaProducto = "CREATE TABLE HR.PRODUCTOS "
+						+ "   (	ID_PRODUCTO NUMBER NOT NULL ENABLE PRYMARY KEY,"
+						+ "	DESCRIPCION VARCHAR2(50 BYTE) NOT NULL ENABLE,"
+						+ "	PRECIO NUMBER DEFAULT 0 NOT NULL ENABLE, "
+						+ "	STOCK NUMBER DEFAULT 0 NOT NULL ENABLE) ";
+				con.createStatement().execute(crearTablaProducto);
+De Begoña Olea para todos 11:44 AM
+String insertProducto1 = "INSERT INTO HR.PRODUCTOS " +
+				   "(ID_PRODUCTO, DESCRIPCION, PRECIO, STOCK) " + 
+				   " VALUES (1, 'Televisión', 1522.8,5)";
+				String insertProducto2 = "INSERT INTO HR.PRODUCTOS " +
+						   "(ID_PRODUCTO, DESCRIPCION, PRECIO, STOCK) " + 
+						   " VALUES (2, 'Zapatos', 152.8,20)";
+				
+			//	con.createStatement().execute(insertProducto1);
+			//	con.createStatement().execute(insertProducto2);
+De Begoña Olea para todos 12:12 PM
+…..
+De Begoña Olea para todos 12:19 PM
+String crearTablaProducto = "CREATE TABLE HR.PRODUCTOS "
+						+ "   (	ID_PRODUCTO NUMBER NOT NULL ENABLE PRIMARY KEY,"
+						+ "	DESCRIPCION VARCHAR2(50 BYTE) NOT NULL ENABLE,"
+						+ "	PRECIO NUMBER DEFAULT 0 NOT NULL ENABLE, "
+						+ "	STOCK NUMBER DEFAULT 0 NOT NULL ENABLE) ";
+			//	con.createStatement().execute(crearTablaProducto);
+				
+				
+				String insertProducto1 = "INSERT INTO HR.PRODUCTOS " +
+				   "(ID_PRODUCTO, DESCRIPCION, PRECIO, STOCK) " + 
+				   " VALUES (1, 'Televisión', 1522.8,5)";
+				String insertProducto2 = "INSERT INTO HR.PRODUCTOS " +
+						   "(ID_PRODUCTO, DESCRIPCION, PRECIO, STOCK) " + 
+						   " VALUES (2, 'Zapatos', 152.8,20)";
+				
+			//	con.createStatement().execute(insertProducto1);
+			//	con.createStatement().execute(insertProducto2);
+//cargar driver
+		try {
+
+			   Class.forName("oracle.jdbc.driver.OracleDriver");
+				
+				System.out.println("cargó ok");
+			} catch (ClassNotFoundException e) {
+				System.out.println("No cargó driver");
+				e.printStackTrace();
+				return;
+			}
+De Begoña Olea para todos 12:31 PM
+<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>21.1.0.0</version>
+		</dependency>
+De Conrado Ayuso para todos 12:35 PM
+<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<version>21.1.0.0</version>
+		</dependency>
