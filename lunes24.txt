@@ -70,3 +70,8 @@ De Conrado Ayuso para todos 12:35 PM
 			<artifactId>ojdbc8</artifactId>
 			<version>21.1.0.0</version>
 		</dependency>
+		
+		
+		reinstalar maven
+		
+		https://download.eclipse.org/technology/m2e/releases/2.0.4/
