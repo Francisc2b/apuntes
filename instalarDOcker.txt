@@ -16,3 +16,6 @@ https://hub.docker.com/r/oracleinanutshell/oracle-xe-11g
 
 
 docker pull oracleinanutshell/oracle-xe-11g
+
+ERROR DOCKER PUERTO RESERVADOS
+https://github.com/docker/for-win/issues/3171
