@@ -1,0 +1,11 @@
+Cobalt2 Theme Official
+
+Git Graph
+
+Live Server
+
+Material Icon Theme
+
+Prettier - Code formatter
+
+Rainbow Brackets
