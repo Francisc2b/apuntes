@@ -29,3 +29,14 @@ insert into PEDIDOS VALUES (PEDIDO_SEQ.nextval, 'coche', 1, sysdate, 'Luis');
 	}
 	
 	//update
+	
+	
+	
+	//INSERT
+	@PostMapping("/ws/pedidos")
+	public Pedido add(@RequestBody Pedido newPedido) {
+		
+		Pedido  pConId = pedidoService.generarPedido(newPedido);
+		
+		return pConId;
+	}
