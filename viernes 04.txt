@@ -1,0 +1,31 @@
+insert into PEDIDOS VALUES (PEDIDO_SEQ.nextval, 'Zapatos', 1, sysdate, 'Luis');
+insert into PEDIDOS VALUES (PEDIDO_SEQ.nextval, 'Babuchas', 1, sysdate, 'Luis');
+insert into PEDIDOS VALUES (PEDIDO_SEQ.nextval, 'Televisión', 1, sysdate, 'Maite');
+insert into PEDIDOS VALUES (PEDIDO_SEQ.nextval, 'coche', 1, sysdate, 'Luis');
+
+
+
+//get all
+	@GetMapping("/ws/pedidos")
+	public Collection<Pedido> all(){		
+		return pedidoService.getPedidos(null);		
+	}
+	
+	//get by id
+
+	@GetMapping("/ws/pedidos{id}")
+	public Pedido byId(){		
+		return null;		
+	}
+	//insert
+	
+	
+	
+	//delete
+	@DeleteMapping("/ws/pedidos{id}")
+	public ResponseEntity<?> eliminarPedido(@PathVariable Integer id){
+		pedidoService.getPedido(id);
+		return ResponseEntity.ok().build();
+	}
+	
+	//update
